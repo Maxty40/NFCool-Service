@@ -1,0 +1,56 @@
+{% extends "home.html" %} 
+{% block title %}
+Layanan | NF Cool Service
+{% endblock %}
+{% load static %} {% block content %} 
+<section class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-5">Layanan Utama</h1>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img
+            src="{% static 'images/service-ac.png' %}"
+            class="card-img-top"
+            alt="Layanan service AC rumah"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Service AC profesional untuk menjaga performa dan kenyamanan
+              ruangan.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img
+            src="{% static 'images/service-ac.png' %}"
+            class="card-img-top"
+            alt="Cuci AC berkala"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Cuci AC rutin agar udara lebih bersih dan mesin lebih awet.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img
+            src="{% static 'images/service-ac.png' %}"
+            class="card-img-top"
+            alt="Perbaikan AC rusak"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Perbaikan AC cepat dan tepat oleh teknisi berpengalaman.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

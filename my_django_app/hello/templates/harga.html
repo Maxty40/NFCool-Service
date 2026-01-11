@@ -1,0 +1,72 @@
+{% extends "home.html" %} 
+{% block title %}
+Harga | NF Cool Service
+{% endblock %}
+{% load static %} 
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="fw-semibold">Harga</h1>
+            <p class="fs-5">Harga transparan, teknisi berpengalaman, tanpa biaya tersembunyi</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Cuci AC</h5>
+                        <h3 class="text-primary fw-bold my-3">Rp. 65.000</h3>
+                        <p class="fs-5">per unit</p>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li><i class="bi bi-check-circle-fill text-success mx-1"></i>Cuci Filter & Evaporator</li>
+                            <li><i class="bi bi-check-circle-fill text-success mx-1"></i>Pengecekan Ringan</li>
+                            <li><i class="bi bi-check-circle-fill text-success mx-1"></i>AC Lebih Dingin</li>
+                        </ul>
+                        <a href="/form_pemesanan" class="btn btn-primary mt-3 w-100">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow border-primary">
+                    <div class="card-body text-center">
+                        <span class="badge bg-primary mb-2">Paling Laris</span>
+                        <h5 class="card-title fw-bold">Servis AC</h5>
+                        <h3 class="text-primary fw-bold my-3">Rp. 75.000</h3>
+                        <p class="fs-5">per unit</p>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li><i class="bi bi-check-circle-fill text-success mx-1"></i>Cuci Filter Menyeluruh</li>
+                            <li><i class="bi bi-check-circle-fill text-success mx-1"></i>Cek Tekanan Freon</li>
+                            <li><i class="bi bi-check-circle-fill text-success mx-1"></i>Pengecekan Komponen</li>
+                        </ul>
+                        <a href="/form_pemesanan" class="btn btn-primary mt-3 w-100">Konsultasi Gratis</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Pasang AC</h5>
+                        <h3 class="text-primary fw-bold my-3">Mulai dari Rp. 300.000</h3>
+                        <p class="fs-5">per unit</p>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li><i class="bi bi-check-circle-fill text-success mx-1"></i>Instalasi Rapih</li>
+                            <li><i class="bi bi-check-circle-fill text-success mx-1"></i>Pipa & Bracket Standar</li>
+                            <li><i class="bi bi-check-circle-fill text-success mx-1"></i>Garansi Pemasangan</li>
+                        </ul>
+                        <a href="/form_pemesanan" class="btn btn-primary mt-3 w-100">Booking Jadwal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 text-center">
+            <p class="text-muted small">
+                * Harga dapat berubah tergantung kondisi AC dan lokasi.  
+                * Biaya sparepart tidak termasuk dalam harga layanan.
+            </p>
+        </div>
+        <div class="text-center mt-4">
+            <a href="https://wa.me/+6282297465204" class="btn btn-success btn-lg">Chat WhatsApp Sekarang</a>
+        </div>
+    </div>
+</section>
+{% endblock  %}

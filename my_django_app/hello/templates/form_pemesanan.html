@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<<<<<<< HEAD
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Pemasangan dan Servis AC</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class=" mt-5 w-50 ms-lg-5">
+        <h2 class="text-center mb-4">Form Pemesanan Layanan AC</h2>
+        <form action="/submit-order" method="post"> <!-- Ganti dengan endpoint pemrosesan Anda -->
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="nama" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="nama" name="nama" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="telepon" class="form-label">Nomor Telepon</label>
+                    <input type="tel" class="form-control" id="telepon" name="telepon" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="jenis_layanan" class="form-label">Jenis Layanan</label>
+                    <select class="form-select" id="jenis_layanan" name="jenis_layanan" required>
+                        <option value="">Pilih</option>
+                        <option value="pemasangan">Pemasangan AC Baru</option>
+                        <option value="servis">Servis AC</option>
+                        <option value="perbaikan">Perbaikan AC</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="alamat" class="form-label">Alamat Lengkap</label>
+                <textarea class="form-control" id="alamat" name="alamat" rows="3" required></textarea>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="merk_model" class="form-label">Merk dan Model AC</label>
+                    <input type="text" class="form-control" id="merk_model" name="merk_model"
+                        placeholder="Contoh: Daikin FTKS25">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="tanggal" class="form-label">Tanggal Layanan Diinginkan</label>
+                    <input type="date" class="form-control" id="tanggal" name="tanggal" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="waktu" class="form-label">Waktu Layanan</label>
+                <select class="form-select" id="waktu" name="waktu">
+                    <option value="pagi">Pagi (08:00 - 12:00)</option>
+                    <option value="siang">Siang (12:00 - 16:00)</option>
+                    <option value="sore">Sore (16:00 - 20:00)</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="detail_tambahan" class="form-label">Detail Tambahan (Opsional)</label>
+                <textarea class="form-control" id="detail_tambahan" name="detail_tambahan" rows="3"
+                    placeholder="Deskripsikan masalah atau kebutuhan spesifik"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-25" style="display: flex; margin: auto; ">Kirim Pesanan</button>
+        </form>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan Pemasangan dan Servis AC</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body style="">
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-6 border border-2 border-primary rounded-4 px-5 py-3">
+          <h2 class="text-center mb-4">Form Pemesanan Layanan AC</h2>
+          <form method="post">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="nama" class="form-label">Nama Lengkap</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  name="nama"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="telepon" class="form-label">Nomor Telepon</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telepon"
+                  name="telepon"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="jenis_layanan" class="form-label"
+                  >Jenis Layanan</label
+                >
+                <select
+                  class="form-select"
+                  id="jenis_layanan"
+                  name="jenis_layanan"
+                  required
+                >
+                  <option value="">Pilih</option>
+                  <option value="Pemasangan AC Baru">Pemasangan AC Baru</option>
+                  <option value="Servis AC">Servis AC</option>
+                  <option value="Perbaikan AC">Perbaikan AC</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="alamat" class="form-label">Alamat Lengkap</label>
+              <textarea
+                class="form-control"
+                id="alamat"
+                name="alamat"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="merk_model" class="form-label"
+                  >Merk dan Model AC</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="merk_model"
+                  name="merk_model"
+                  placeholder="Contoh: Daikin FTKS25"
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="tanggal" class="form-label"
+                  >Tanggal Layanan Diinginkan</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="tanggal"
+                  name="tanggal"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="waktu" class="form-label">Waktu Layanan</label>
+              <select class="form-select" id="waktu" name="waktu">
+                <option value="Pagi">Pagi (08:00 - 12:00)</option>
+                <option value="Siang">Siang (12:00 - 16:00)</option>
+                <option value="Sore">Sore (16:00 - 20:00)</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="detail_tambahan" class="form-label"
+                >Detail Tambahan (Opsional)</label
+              >
+              <textarea
+                class="form-control"
+                id="detail_tambahan"
+                name="detail_tambahan"
+                rows="3"
+                placeholder="Deskripsikan masalah atau kebutuhan spesifik"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary w-25"
+              style="display: flex; margin: auto"
+            >
+              Kirim Pesanan
+            </button>
+          </form>
+        </div>
+      </div>
+>>>>>>> 81e4409 (Update Form)
+    </div>
+
+    <!-- Bootstrap JS (opsional, untuk komponen interaktif) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<<<<<<< HEAD
+</body>
+
+</html>
+=======
+  </body>
+</html>
+>>>>>>> 81e4409 (Update Form)

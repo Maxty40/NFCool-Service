@@ -1,0 +1,94 @@
+{% extends "home.html" %} 
+{% block title %} Tentang | NF Cool Service {% endblock %} 
+{% load static %} {% block content %}
+
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-3">
+      <h1 class="fw-semibold">Tentang Kami</h1>
+      <p class="fs-5">Solusi AC terpercaya untuk kenyamanan ruangan Anda</p>
+    </div>
+
+    <div class="row align-items-center g-5">
+      <div class="col-md-5">
+        <img
+          src="{% static 'images/pngtree-air-conditioning.jpg' %}"
+          alt=""
+          class="img-fluid rounded"
+        />
+      </div>
+
+      <div class="col-md-7">
+        <h3 class="fw-semibold mb-3">NF Cool Service</h3>
+        <p class="fs-6">
+          NF Cool Service adalah perusahaan jasa pelayanan AC yang berkomitmen
+          memberikan solusi terbaik untuk kenyamanan ruangan Anda. Dengan
+          teknisi berpengalaman dan pelayanan yang cepat, kami siap menangani
+          pemasangan, perawatan, hingga perbaikan AC dengan hasil yang rapi dan
+          terpercaya.
+        </p>
+        <p class="fs-6">
+          Dengan teknisi berpengalaman dan pelayanan yang cepat, kami siap
+          menangani pemasangan, perawatan, hingga perbaikan AC dengan hasil
+          yang rapi dan terpercaya.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Apa Kata Pelanggan Kami</h2>
+            <p class="text-muted">Kepuasan pelanggan adalah prioritas utama kami</p>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <div class="mx-auto" style="max-width: 700px">
+                        <p class="fst-italic fs-5">
+                            “Pelayanan cepat dan teknisinya ramah. AC jadi dingin lagi,
+                            hasil kerjanya rapi.”
+                        </p>
+                        <h6 class="fw-semibold mb-0">Dhiauddin Arfa</h6>
+                        <small class="text-muted">Bogor</small>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="mx-auto" style="max-width: 700px">
+                        <p class="fst-italic fs-5">
+                            “Teknisi datang tepat waktu dan menjelaskan kondisi AC dengan jelas.
+                            Harganya juga transparan.”
+                        </p>
+                        <h6 class="fw-semibold mb-0">Prabowo Subianto</h6>
+                        <small class="text-muted">Jakarta Pusat</small>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="mx-auto" style="max-width: 700px">
+                        <p class="fst-italic fs-5">
+                            “Tidak ada biaya tambahan aneh-aneh.
+                            Pelayanan profesional dan bisa dipercaya.”
+                        </p>
+                        <h6 class="fw-semibold mb-0">Gibran Rakabuming</h6>
+                        <small class="text-muted">Solo</small>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="/form_pemesanan" class="btn btn-primary">Pesan Layanan Sekarang</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
