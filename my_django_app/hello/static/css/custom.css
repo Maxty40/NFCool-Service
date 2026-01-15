@@ -1,0 +1,151 @@
+body {
+    background: linear-gradient(135deg, #cfe9ff, #ffffff);
+}
+
+/* styling navbar */
+.ice-navbar {
+    background: linear-gradient(90deg, #e3f2fd, #f8fbff);
+}
+.ice-navbar, .nav-link{
+    color: #0d3b66;
+    font-weight: 500;
+}
+.ice-navbar .nav-link:hover {
+  color: #0d6efd;
+}
+.ice-navbar .navbar-brand {
+  color: #0d6efd;
+}
+
+/* styling layanan */
+.layanan-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    background-color: #fff;
+}
+.layanan-img-wrapper {
+    overflow: hidden;
+    height: 300px;
+}
+.layanan-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.layanan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+.layanan-card .card-title {
+    margin-top: 10px;
+}
+.layanan-card .card-text {
+    font-size: 0.95rem;
+}
+
+/* styling harga */
+.harga-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    background-color: #fff;
+}
+.harga-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+/* styling galeri */
+.gallery-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+.gallery-caption {
+    padding: 12px;
+    font-size: 0.95rem;
+    text-align: center;
+    color: #555;
+    background-color: #f8f9fa;
+}
+
+/* styling tombol carousel */
+#testimonialCarousel .carousel-control-prev,
+#testimonialCarousel .carousel-control-next {
+    background-color: #1e90ff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#testimonialCarousel .carousel-control-prev-icon,
+#testimonialCarousel .carousel-control-next-icon {
+    filter: invert(1);
+    width: 20px;
+    height: 20px;
+}
+#testimonialCarousel i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* styling form pemesanan */
+.page-form {
+    background: linear-gradient(135deg, #f5faff, #e8f1ff);
+}
+.form-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 15px 35px rgba(13, 110, 253, 0.15);
+}
+.form-card h2 {
+    font-weight: 700;
+    color: #0d6efd;
+}
+.form-label {
+    font-weight: 500;
+    color: #344767;
+}
+.form-control, 
+.form-select {
+    border-radius: 12px;
+    padding: 10px 14px;
+    border: 1px solid #ced4da;
+    transition: all 0.25s ease;
+}
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+textarea.form-control {
+    resize: none;
+}
+.form-card .btn-primary {
+    border-radius: 50px;
+    padding: 10px;
+    font-weight: 600;
+    display: block;
+    margin: 1.5rem auto 0;
+    transition: all 0.3s ease;
+}
+.form-card .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+}

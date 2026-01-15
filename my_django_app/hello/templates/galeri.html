@@ -4,9 +4,64 @@ Kontak | NF Cool Service
 {% endblock %}
 {% load static %} 
 {% block content %}
-<section>
-    <div class="">
+<section class="py-5">
+    <div class="container text-center">
         <h1 class="text-center">Galeri Kami</h1>
+        <p class="">Dokumentasi hasil pekerjaan NF Cool Service di berbagai lokasi pelanggan</p>
+    </div>
+</section>
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card">
+                    <img src="{% static 'images/service-ac.png' %}" alt="">
+                    <div class="gallery-caption">
+                        Service AC rumah pelanggan
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card">
+                    <img src="{% static 'images/cuci_ac.jpg' %}" alt="">
+                    <div class="gallery-caption">
+                        Cuci AC rumah pelanggan
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card">
+                    <img src="{% static 'images/pasang_ac.jpg' %}" alt="">
+                    <div class="gallery-caption">
+                        Pasang AC rumah pelanggan
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card">
+                    <img src="{% static '' %}" alt="">
+                    <div class="gallery-caption">
+                        Service AC rumah pelanggan
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card">
+                    <img src="{% static '' %}" alt="">
+                    <div class="gallery-caption">
+                        Service AC rumah pelanggan
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card">
+                    <img src="{% static '' %}" alt="">
+                    <div class="gallery-caption">
+                        Service AC rumah pelanggan
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 {% endblock  %}
