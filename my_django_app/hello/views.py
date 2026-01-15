@@ -5,7 +5,6 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from .forms import FormPemesanan
 
-# Create your views here.
 def home(request):
     return render(request, 'home.html')
 
